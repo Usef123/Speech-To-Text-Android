@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="float_transparent">#00000000</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="image_button_pressed_color">#CDD7D6E6</color>
+    <color name="image_button_normal_color">#CDD7D6E6</color>
+    <color name="transparent">#00ffffff</color>
+
+    <color name="page_background">#EDEDFF</color>
+    <color name="center_background_color">#FAFAFA</color>
+    <color name="start_background_color">#FDFDFD</color>
+    <color name="border_background_color">#F6EACB</color>
+    <color name="main_top_page_color">#26029A</color>
+    <color name="main_page_color">#EDEDFF</color>
+    <color name="main_page_content_color">#FFFFFF</color>
+    <color name="detail_page_content_text">#212121</color>
+    <color name="detail_page_content_text_hint">#919292</color>
+    <color name="detail_page_content_text_highlight">#919292</color>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.tnt.speech.speechtotext">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_laucher"
+        android:roundIcon="@drawable/ic_laucher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="org.tnt.speech.speechtotext.SpeechToTextActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

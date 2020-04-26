@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/main_top_page_color">
+
+    <LinearLayout
+        android:id="@+id/layoutquicknote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_rounded"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:visibility="visible"
+        android:layout_above="@+id/speechlayout"
+        android:padding="1dp">
+
+        <ScrollView
+            android:id="@+id/quicknoteScrollView"
+            android:layout_width="match_parent"
+            android:fillViewport="false"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/tv_quicknotecontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="15dp"
+                    android:background="@null"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:hint="@string/text_hint"
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:linksClickable="false"
+                    android:textColor="@color/detail_page_content_text"
+                    android:textColorHint="@color/detail_page_content_text_hint"
+                    android:textColorHighlight="@color/detail_page_content_text_highlight"
+                    android:imeOptions="actionDone"
+                    android:textCursorDrawable="@null"/>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/speechlayout"
+        android:gravity="bottom"
+        android:background="@color/main_page_content_color"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/speechContentLayout"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp"
+            android:background="@color/main_page_color"
+            android:layout_below="@+id/layoutquicknote"
+            android:visibility="visible"
+            >
+            <RelativeLayout
+                android:id="@+id/layoutRecordAudioScreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:minHeight="90dp">
+                <TextView
+                    android:id="@+id/recordAudioTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Listening..."
+                    android:textColor="@color/detail_page_content_text"
+                    android:textStyle="bold"
+                    android:padding="7dp"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <ImageButton
+                    android:id="@+id/buttonRecordAudio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/recordAudioTitle"
+                    android:background="@drawable/default_image_button_selector"
+                    android:src="@mipmap/mn_recordstart"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
