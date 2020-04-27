@@ -1,7 +1,7 @@
-# Speech-To-Text-Android
+# Speech To Text Android
 Google Speech to text
 
-Speech (Voice) Recognition using Java and Android.
+Speech Recognition using Java and Android.
 
 Refer application on Play store as: https://play.google.com/store/apps/details?id=org.note.voicenote.quickvoicenote
 
